@@ -136,7 +136,7 @@ img {
 }
 .features-list {
   display: flex;
-  justify-content: center space-between;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -166,6 +166,7 @@ img {
   color: #4d5053;
   margin-bottom: 48px;
   text-align: center;
+  /* padding: 20px; */
 }
 .features-link {
   display: flex;
