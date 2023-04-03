@@ -92,8 +92,8 @@ img {
 }
 
 .hero-text {
-  line-height: 1.5px;
-  letter-spacing: 0.22px;
+  /* line-height: 15px;
+  letter-spacing: 0.22px; */
   color: #4d5053;
   font-size: 22px;
   margin-bottom: 35px;
@@ -186,6 +186,7 @@ img {
 .design-content {
   display: flex;
 }
+
 .designs-title {
   font-size: 50px;
   line-height: 65px;
@@ -204,6 +205,7 @@ img {
   letter-spacing: 0.22px;
   color: #4d5053;
   margin-bottom: 30px;
+  width: 592px;
 }
 
 .desing-tel {
@@ -278,7 +280,7 @@ img {
   background-color: #fff;
   padding: 50px 30px 45px 35px;
 }
-.people-item:not(:last-child){
+.people-item:not(:last-child) {
   margin-right: 17px;
 }
 .people-subtitle {
@@ -311,34 +313,107 @@ img {
   color: #4d5053;
 }
 
-.logo-list {
-  display: flex;
-  justify-content: space-evenly;
+/* logo */
+.logo {
   margin-bottom: 100px;
 }
+
+.logo-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* projects */
+.projects {
+  margin-bottom: 88px;
+}
+
 .projects-title {
   font-family: "DM Serif Display";
-  font-style: normal;
   font-weight: 400;
   font-size: 47px;
   line-height: 62px;
   text-align: center;
   letter-spacing: 0.22px;
   color: #292f36;
+  margin-bottom: 20px;
 }
+
+.projects-text-head {
+  width: 786px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
 .projects-subtitle {
   font-family: "DM Serif Display";
-  font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 38px;
   letter-spacing: 0.22px;
   color: #292f36;
+  margin-top: 24px;
 }
 
 .projects-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+  color: #4d5053;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px 20px;
+}
+
+.projects-item {
+  flex-basis: calc((100% - 20px) / 2);
+}
+.project-item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* stats-section */
+
+.stats-section {
+  height: 475px;
+  background-color: #f4f0ec;
+  padding: 140px 0;
+  margin-bottom: 120px;
+}
+
+.stats-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats-item {
+  border: 1px solid #cda274;
+  height: 195px;
+  width: 288px;
+  margin-right: 16px;
+}
+
+.stats-number {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 85px;
+  line-height: 128px;
+  text-align: center;
+  letter-spacing: 1.7px;
+  color: #cda274;
+}
+
+.stats-text {
   font-family: "Jost";
-  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 33px;
@@ -347,15 +422,8 @@ img {
   color: #4d5053;
 }
 
-.happy-text {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 33px;
-  text-align: center;
-  letter-spacing: 0.22px;
-  color: #4d5053;
+.blogs {
+  margin-bottom: 140px;
 }
 
 .blogs-title {
@@ -367,17 +435,23 @@ img {
   text-align: center;
   letter-spacing: 0.22px;
   color: #292f36;
+  margin-bottom: 21px;
 }
 
-.blogs-text {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 33px;
-  text-align: center;
-  letter-spacing: 0.22px;
-  color: #4d5053;
+.blogs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 10px;
+}
+
+.blogs-item {
+  flex-basis: calc((100% - 20px) / 3);
+}
+
+.blogs-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .blogs-subtitle {
@@ -400,6 +474,13 @@ img {
   color: #4d5053;
 }
 
+.wanna {
+  background-color: #292f36;
+  border-radius: 70px;
+  height: 414px;
+  width: 1200px;
+  margin-bottom: 130px;
+}
 .wanna-title {
   font-family: "DM Serif Display";
   font-style: normal;
@@ -408,6 +489,9 @@ img {
   line-height: 75px;
   text-align: center;
   letter-spacing: 0.22px;
+  padding-top: 100px;
+  color: #fff;
+  margin-bottom: 9px;
 }
 
 .wanna-text {
@@ -418,9 +502,17 @@ img {
   line-height: 33px;
   text-align: center;
   letter-spacing: 0.22px;
+  color: #fff;
+  margin-bottom: 31px;
 }
 
 .wanna-btn {
+  display: block;
+  background-color: #cda274;
+  border: 2px solid #cda274;
+  box-shadow: 1px 0px 18px rgba(0, 0, 0, 0.2);
+  border-radius: 18px;
+  padding: 21px 34px;
   font-family: "Jost";
   font-style: normal;
   font-weight: 400;
@@ -428,17 +520,10 @@ img {
   line-height: 27px;
   text-align: center;
   letter-spacing: 0.22px;
+  margin: 0 auto;
 }
+/* 
 
-.leading-text {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 33px;
-  letter-spacing: 0.22px;
-  color: #4d5053;
-}
 
 .pages-text {
   font-family: "DM Serif Display";
@@ -468,4 +553,65 @@ img {
   line-height: 33px;
   letter-spacing: 0.22px;
   color: #4d5053;
+} */
+
+.footer-menu {
+display: flex;
+}
+
+.footer-menu-one {
+  margin-right: 80px;
+}
+
+.footer-title {
+font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 38px;
+letter-spacing: 0.22px;
+color: #292F36;
+margin-bottom: 21px;
+}
+
+.leading-img {
+  margin-bottom: 15px;
+}
+
+.leading-text {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+  color: #4d5053;
+  margin-bottom: 30px;
+}
+
+.footer-menu-one {
+  width: 326px;
+}
+
+.leading-list {
+  display: flex;
+}
+
+.leading-item {
+  margin-right: 40px;
+}
+
+.footer-menu-two,
+.footer-menu-three {
+  margin-right: 40px;
+}
+
+.footer-link {
+  font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 33px;
+letter-spacing: 0.22px;
+color: #4D5053;
 }
