@@ -398,9 +398,12 @@ img {
 }
 
 .stats-item {
-  border: 1px solid #cda274;
   height: 195px;
   width: 288px;
+}
+
+.stats-item:not(:last-child) {
+  border-right: 1px solid #cda274;
   margin-right: 16px;
 }
 
@@ -474,6 +477,7 @@ img {
 }
 
 .blogs-text {
+  margin-bottom: 70px;
   text-align: center;
   font-style: normal;
   font-size: 16px;
